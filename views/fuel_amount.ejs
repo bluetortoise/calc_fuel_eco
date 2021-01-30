@@ -1,0 +1,51 @@
+<!---------------------------------->
+<!--     calcFuelEco fuel_amount.ejs      -->
+<!---------------------------------->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Calculate fuel eco </title>
+        <link rel = "stylesheet" 
+        href = "/css/style.css">
+    </head>
+    <body>
+        <h1>給油量入力画面</h1>
+
+        <form action = "/create" method = "POST">
+            <!-- 年月 (YYYYMM) -->
+            <p>年月 (YYYYMM)</p>
+            <input type = "text" name = "refueledMonth">
+
+            <!-- 運行回数 -->
+            <p>運行回数</p>
+            <input type = "text" name = "opeTime">
+
+            <!-- 運転者ID -->
+            <p>運転者ID</p>
+            <input type = "" name = "driverId">
+
+            <!-- 車番 -->
+            <p>車番</p>
+            <input type = "" name = "carId">
+
+            <!-- 開始距離 -->
+            <p>開始距離</p>
+            <input type = "" name = "startDist">
+
+            <!-- 終了距離 -->
+            <p>終了距離</p>
+            <input type = "" name = "endDist">
+
+            <!-- 給油量 -->
+            <p>給油量</p>
+            <input type = "" name = "amount">
+
+            <!-- ボタン -->
+            <input type = "submit" value = "給油情報を登録">
+        </form>
+
+        <a href = "/">トップ画面に戻る</a>
+    </body>
+</html>
